@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Franck Omgba</title>
+    <script src="https://kit.fontawesome.com/c427a0c6ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <img src="https://placehold.co/245x110/080808/ff004f?text=Instinctivement&font=Poppins" alt="logo"
+                    class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Ingenieer</p>
+                <h1>Hello, moi c'est <span>Franck</span><br />Omgba Originaire du Cameroon
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------About------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="https://placehold.co/630x815/FFF/ff004f?text=User&font=Poppins" alt="User" /> -->
+                    <img src="image/profile.jpg" alt="User" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">A Propos De Moi</h1>
+                    <p>
+                        J'ai de solides compétences en développement d'applications web et mobiles avec des langages
+                        tels que Python, Java
+                        Android et PHP. J'ai travaillé avec Laravel pour développer des API Rest et j'ai une expérience
+                        de la méthodologie Agile
+                        avec le cycle en V et de la gestion de version de code avec Git.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Compétences
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Expérience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Développement Web</span><br />HTML5/CSS3, Javascript/ReactJs/Vue.js,
+                                php/laravel8/NodeJs/API Rest</li>
+                            <li><span>DBases de données</span><br />SQL3 / ORACLE MERISE / UML</li>
+                            <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                            <li><span>Langages</span><br />Java
+                                Python
+                                Dart / Flutter </li>
+                            <li>
+                                <span>Réseau</span><br />CCNA1,2,3 AWS
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2023 - Présent</span><br />Alternant en tant que développeur
+                            </li>
+                            <li><span>02/2022 - 09/2022 </span><br />CDI en développement web et mobile</li>
+                            <li><span>10/2021- 02/2022 </span><br />Stagiaire en développement web</li>
+                            <li><span>06/2021 - 09/2021 </span><br />Stagiaire en systèmes et réseaux</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Présent</span><br />Institut Africain d'Informatique, Yaoundé</li>
+                            <li><span>2022 - 2023</span><br />Institut des Sciences et Techniques des Yvelines UVSQ
+                                Paris
+                                Saclay (78)</li>
+                            <li><span>2020 - 2021</span><br />Institut Africain d'Informatique, Yaoundé</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Sevices---------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Mes Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Création de sites web modernes et responsifs adaptés à tous les appareils.
+                    </p>
+                    <a href="#" class="learn-more" data-service="web-design">Voir plus...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>
+                        Conception d'interfaces utilisateur intuitives et expériences utilisateur optimisées.
+                    </p>
+                    <a href="#" class="learn-more" data-service="ui-ux">Voir plus...</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        Design d'applications mobiles élégantes et fonctionnelles pour iOS et Android.
+                    </p>
+                    <a href="#" class="learn-more" data-service="app-design">Voir plus...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------Portfolio------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mes travaux</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://placehold.co/650x800/FFF/ff004f?text=Work...&font=Poppins" alt="work" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Suscipit autem laboriosam consequatur obcaecati cupiditate,
+                            nobis voluptatum atque non magni! Excepturi adipisci,
+                            necessitatibus aliquam pariatur dolores corporis unde commodi
+                            alias explicabo?
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://placehold.co/650x800/FFF/ff004f?text=Work...&font=Poppins" alt="work" />
+                    <div class="layer">
+                        <h3>Music Media App</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Suscipit autem laboriosam consequatur obcaecati cupiditate,
+                            nobis voluptatum atque non magni! Excepturi adipisci,
+                            necessitatibus aliquam pariatur dolores corporis unde commodi
+                            alias explicabo?
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://placehold.co/650x800/FFF/ff004f?text=Work...&font=Poppins" alt="work" />
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Suscipit autem laboriosam consequatur obcaecati cupiditate,
+                            nobis voluptatum atque non magni! Excepturi adipisci,
+                            necessitatibus aliquam pariatur dolores corporis unde commodi
+                            alias explicabo?
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Instinctivement" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------------Contact------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contactez Moi</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>omgbafranck2707@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+33 749 45 11 90</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/franck-omgba/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Document/CV.pdf" download class="btn btn2">Télécharger CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Votre Nom" required />
+                        <input type="email" name="Email" placeholder="Votre Email" required />
+                        <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                        <button type="submit" class="btn btn2">Envoyez</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright <i class="fa-solid fa-copyright"></i>
+                Franck OMGBA </p>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
