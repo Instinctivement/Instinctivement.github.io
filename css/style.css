@@ -379,7 +379,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(https://placehold.co/1080x1920/080808/ff004f?text=Stanley&font=Poppins);
+        background-image: url(https://placehold.co/1080x1920/080808/ff004f?text=.&font=Poppins);
     }
 
     .header-text {
@@ -388,7 +388,7 @@ nav .fa-solid {
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     nav .fa-solid {
